@@ -11,8 +11,37 @@ import java.util.Scanner;
 
 import org.apache.poi.ss.formula.functions.FinanceLib;
 
+	/**
+	 * 
+	 * @author Cedric Selph
+	 * @author Thomas Wartzack
+	 * @author Danielle Walukiewicz
+	 *
+	 * Lab 1, 9/14/15
+	 * CISC 181
+	 *
+	 */
 public class User_Input {
 	
+	/**
+	 * 
+	 * This program takes multiple inputs that are used to determine logistics of an annuity
+	 * 
+	 * @param years_working
+	 * @param average_return
+	 * @param years_till_death
+	 * @param retired_return
+	 * @param Income
+	 * @param SSI_Income
+	 * 
+	 * Using these parameters, Present Value and Payments for the annuity are calculated using their respective formulas
+	 * These formulas have been imported from org.apache.poi.ss.formula.functions.FinanceLib
+	 * 
+	 * After the inputs are received, they are plugged into the formulas for Present Value and Payment
+	 * Present Value and Payment are then printed in that order
+	 * 
+	 * 
+	 */
 	public static void main(String[] args){
 	Scanner input= new Scanner(System.in);
 		
@@ -34,7 +63,7 @@ public class User_Input {
 		System.out.print("Expected SSI amount:");
 		double SSI_Income=input.nextDouble();
 		
-
+		input.close();
 		
 		double PV;
 		
